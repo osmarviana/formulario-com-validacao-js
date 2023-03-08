@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .cabecalho {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .cabecalho .titulo {
+    font-size: 26px;
+  }
+
+  .formulario {
+    width: 300px;
+  }
+}
