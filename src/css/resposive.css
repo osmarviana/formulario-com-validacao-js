@@ -1,18 +1,45 @@
 @media (max-width: 768px) {
-  main {
-    width: 100vw;
-    height: 100vh;
+  .cabecalho {
+    width: 70%;
+  }
+
+  .cabecalho .titulo {
+    font-size: 32px;
+  }
+
+  .cabecalho .sub-titulo {
+    font-size: 20px;
+  }
+
+  .cabecalho .descricao {
+    width: 95%;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
     flex-direction: column;
+    height: 100%;
   }
 
   .cabecalho {
+    width: 100%;
     text-align: center;
-    margin-right: 0;
-    margin-bottom: 25px;
+    margin: 20px 0;
   }
 
   .cabecalho .titulo {
     font-size: 26px;
+  }
+
+  .cabecalho .sub-titulo {
+    font-size: 18px;
+  }
+
+  .cabecalho .descricao {
+    width: 100%;
+    font-size: 14px;
   }
 
   .formulario {

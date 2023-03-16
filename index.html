@@ -11,62 +11,64 @@
   </head>
   <body>
     <main>
-      <div class="cabecalho">
-        <h1 class="titulo">FICOU COM DÚVIDA?</h1>
-        <h2 class="sub-titulo">NOS MANDE UMA MENSAGEM!</h2>
-        <p class="descricao">
-          Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
-          entraremos em contato em menos de 24h.
-        </p>
+      <div class="container">
+        <div class="cabecalho">
+          <h1 class="titulo">FICOU COM DÚVIDA?</h1>
+          <h2 class="sub-titulo">NOS MANDE UMA MENSAGEM!</h2>
+          <p class="descricao">
+            Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem
+            e entraremos em contato em menos de 24h.
+          </p>
+        </div>
+
+        <form class="formulario" id="formulario" action="#">
+          <div class="form-control">
+            <input
+              class="input"
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome completo *"
+            />
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email *"
+            />
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              class="input"
+              type="number"
+              name="telefone"
+              id="telefone"
+              placeholder="Telefone *"
+            />
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <textarea
+              class="input"
+              name="mensagem"
+              id="mensagem"
+              placeholder="Mensagem *"
+            ></textarea>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <p class="instrucao">* campos obrigatórios</p>
+          <input type="submit" id="enviar" />
+        </form>
       </div>
-
-      <form class="formulario" id="formulario" action="#">
-        <div class="form-control">
-          <input
-            class="input"
-            type="text"
-            name="nome"
-            id="nome"
-            placeholder="Nome completo *"
-          />
-          <p class="mensagem-erro">campo obrigatório</p>
-        </div>
-
-        <div class="form-control">
-          <input
-            class="input"
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email *"
-          />
-          <p class="mensagem-erro">campo obrigatório</p>
-        </div>
-
-        <div class="form-control">
-          <input
-            class="input"
-            type="number"
-            name="telefone"
-            id="telefone"
-            placeholder="Telefone *"
-          />
-          <p class="mensagem-erro">campo obrigatório</p>
-        </div>
-
-        <div class="form-control">
-          <textarea
-            class="input"
-            name="mensagem"
-            id="mensagem"
-            placeholder="Mensagem *"
-          ></textarea>
-          <p class="mensagem-erro">campo obrigatório</p>
-        </div>
-
-        <p class="instrucao">* campos obrigatórios</p>
-        <input type="submit" id="enviar" />
-      </form>
     </main>
 
     <script src="./src/js/script.js"></script>

@@ -2,48 +2,49 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e5e5e5;
-  position: relative;
+  max-width: 1440px;
+  height: 100vh;
 }
 
 main {
-  width: 800px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../img/bg-repeat.jpg);
   background-position: center;
   background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 12px 50px;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
 .cabecalho {
-  width: 300px;
-  margin-right: 72px;
+  width: 40%;
   color: #fff;
 }
 
 .cabecalho .titulo {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 900;
 }
 
 .cabecalho .sub-titulo {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 900;
   margin-bottom: 11px;
 }
 
 .cabecalho .descricao {
-  font-size: 15px;
+  width: 80%;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -101,20 +102,24 @@ main {
   cursor: pointer;
 }
 
-.formulario .mensagem-erro {
-  display: none;
-  font-size: 8px;
+/* ALERTA DE ERRO  */
+.form-control small {
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
   color: #f52e2e;
 }
 
-/* ALERTA DE ERRO  */
+.form-control.success small {
+  visibility: hidden;
+}
 
 .form-control .erro-preenchimento {
   border: 1px solid #f52e2e;
-}
-
-.mensagem-erro.ativar-msg-erro {
-  display: block;
 }
 
 /* ALERTA ACERTO */
